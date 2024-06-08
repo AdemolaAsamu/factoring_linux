@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "This function simply links 2 files without having to create a new file or updating all times"
+ln File1 File2
+
+The above implies what ever is done in file1 is authomatically updated into file2

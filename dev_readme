@@ -1,0 +1,14 @@
+#!/bin/bash
+# Get the name of the PROJECT
+project_name=$(basename "$(pwd)")i
+num=$(ls -l | grep -v ^d | grep -v ^t | wc -l)_old_file
+previous_filename=$num
+cp README.md $previous_filename
+echo "# Personal Development ($project_name) Repository :" > README.md
+echo "This ReadME will be updated from time to time based on the content of the folder" >> README.md
+echo "### AUTHOR - Ademola ASAMU Ademola" >> README.md
+counter=0
+for item in *; do
+	counter=$((counter + 1))
+	echo "> - $counter - $item" >> README.md
+done	
